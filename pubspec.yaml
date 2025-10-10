@@ -1,0 +1,31 @@
+name: smart_desk_assistant_new
+description: A Flutter app to monitor desk lighting and manage work/break cycles with a NodeMCU.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For state management (e.g., sharing NodeMCU data across screens)
+  provider: ^6.1.2
+
+  # For making HTTP requests to the NodeMCU
+  http: ^1.2.1
+
+  # For showing local push notifications on Android
+  flutter_local_notifications: ^17.1.2
+
+  # Icons
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
